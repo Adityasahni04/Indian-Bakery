@@ -35,22 +35,23 @@ cd Indian-Bakery
 ### 2. **Setup Environment** 🔧
 Create `.env` file in project root:
 ```env
-# Database
+# Database configuration
 POSTGRES_USER=aditya
 POSTGRES_PASSWORD=aditya
 POSTGRES_DB=indianbakery
 DB_PORT=5432
 
-# RabbitMQ
+# RabbitMQ configuration
 RABBITMQ_DEFAULT_USER=username
 RABBITMQ_DEFAULT_PASS=userpass
+RABBITMQ_HOST=rabbitmq
+RABBITMQ_PORT=5672
 
-# Backend
+# Backend environment
 DB_HOST=db
 DB_USER=aditya
 DB_PASSWORD=aditya
 DB_NAME=indianbakery
-RABBITMQ_URL=amqp://rabbitmq
 
 # Frontend
 VITE_API_URL=http://localhost:8000
