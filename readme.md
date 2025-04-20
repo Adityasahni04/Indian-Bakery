@@ -1,4 +1,4 @@
-# 🧁🍰 Bakery Management System v2.0
+# 🧁🍰 Bakery Management System 
 
 A modern solution for bakery inventory management with a microservices architecture. Manage your sweet business with style! 🎂📈
 
