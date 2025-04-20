@@ -22,13 +22,13 @@ Getting started is simple with our Docker setup:
 
 1. **Clone the repository**
    ```bash
-   https://github.com/Adityasahni04/Bakery-App.git
-   cd Bakery-App
+   https://github.com/Adityasahni04/Indian-Bakery.git
+   cd Indian-Bakery
    ```
 
 2. **Launch everything with a single command**
    ```bash
-   docker-compose up
+   docker-compose up --build -d
    ```
 
 3. **Access the application**
