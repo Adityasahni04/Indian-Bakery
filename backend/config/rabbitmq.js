@@ -1,7 +1,15 @@
 const amqp = require('amqplib');
 require('dotenv').config();
 
-const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://rabbitmq';
+// Load individual RabbitMQ credentials from .env
+const RABBITMQ_USER = process.env.RABBITMQ_DEFAULT_USER || 'guest';
+const RABBITMQ_PASS = process.env.RABBITMQ_DEFAULT_PASS || 'guest';
+const RABBITMQ_HOST = process.env.RABBITMQ_HOST || 'localhost';
+const RABBITMQ_PORT = process.env.RABBITMQ_PORT || '5672';
+
+// Construct the connection URL
+const RABBITMQ_URL = `amqp://${RABBITMQ_USER}:${RABBITMQ_PASS}@${RABBITMQ_HOST}:${RABBITMQ_PORT}`;
+
 const QUEUE_NAME = 'product_events';
 const POOL_SIZE = 20;
 const RETRY_INTERVAL = 3000; // milliseconds
