@@ -72,13 +72,13 @@ fetch('/addproduct', {
 **Products Table**
 
 | Column       | Type        | Example Value     |
-|--------------|-------------|-------------------|
-| id (PK)      | SERIAL      | 42                |
-| name         | VARCHAR(80) | "Chocolate Cake"  |
-| category     | DECIMAL     | 24.99             |
-| price        | INTEGER     | 15                |
-| stock        | int         | 50                |
-| image_url    | TIMESTAMP   | 2024-02-15 09:30  |
+|--------------|-----------------|-----------------------------|
+| id (PK)      | SERIAL          | 42                          |
+| name         | VARCHAR(80)     | "Chocolate Cake"            |
+| category     | VARCHAR(50)     | "Cakes"                     |
+| price        | DECIMAL(10,2)   | 24.99                       |
+| stock        | INTEGER         | 50                          |
+| image_url    | VARCHAR(255)    | "upload/cake/chocolate.jpg" |
 
 ## 📊 Coming Soon Features
 
