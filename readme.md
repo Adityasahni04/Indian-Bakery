@@ -24,23 +24,49 @@ A modern solution for bakery inventory management with a microservices architect
 | 📡 Messaging           | RabbitMQ + AMQP                             | Async communication                    |
 | 📦 Containerization    | Docker + Docker Compose                     | Service isolation & scaling            |
 
-## 🚀 Getting Started in 3 Steps!
+## 🚀 Getting Started in 4 Steps!
 
-1. **Clone & Enter** 🛠️
-   ```bash
-   git clone https://github.com/Adityasahni04/Indian-Bakery.git
-   cd Indian-Bakery
-   ```
+### 1. **Clone & Enter** 🛠️
+```bash
+git clone https://github.com/Adityasahni04/Indian-Bakery.git
+cd Indian-Bakery
+```
 
-2. **Launch Magic** ✨
-   ```bash
-   docker-compose up --build -d
-   ```
+### 2. **Setup Environment** 🔧
+Create `.env` file in project root:
+```env
+# Database
+POSTGRES_USER=aditya
+POSTGRES_PASSWORD=aditya
+POSTGRES_DB=indianbakery
+DB_PORT=5432
 
-3. **Open & Enjoy** 🎉
-   ```
-   http://localhost:80
-   ```
+# RabbitMQ
+RABBITMQ_DEFAULT_USER=username
+RABBITMQ_DEFAULT_PASS=userpass
+
+# Backend
+DB_HOST=db
+DB_USER=aditya
+DB_PASSWORD=aditya
+DB_NAME=indianbakery
+RABBITMQ_URL=amqp://rabbitmq
+
+# Frontend
+VITE_API_URL=http://localhost:8000
+```
+
+### 3. **Launch Services** ✨
+```bash
+docker-compose up --build -d
+```
+
+### 4. **Access Application** 🎉
+```
+http://localhost:80
+```
+
+> 💡 Pro Tip: Run `docker ps` to verify all containers are healthy
 
 ## 📚 API Cheat Sheet
 
